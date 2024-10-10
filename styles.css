@@ -1,0 +1,127 @@
+body{
+display: flex;
+  flex-direction: column; /* Alinha os itens em coluna */
+  align-items: center; /* Centraliza todos os itens no eixo horizontal */
+  justify-content: center; /* Centraliza todos os itens no eixo vertical */
+  text-align: center; /* Centraliza o texto dentro dos elementos */
+  margin: 0; /* Remove margens padrão */ 
+  background-color: black;
+  text-shadow: 5px -5px 20px #346081;
+  color: rgb(0, 77, 179);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+  background-image: url('assets/images/banner.png');
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+}
+
+.module{
+ 
+}
+
+.banner-content h1, 
+.banner-content p, 
+.banner-content button,
+#course-content h2, 
+#course-content p, 
+#transform-world p, 
+#professional-challenges h2,
+#professional-challenges p,
+.module:hover,
+footer p {
+  transition: transform 0.3s, color 0.3s; /* Transições suaves */
+}
+.banner-content h1:hover, 
+.banner-content p:hover, 
+.banner-content button:hover,
+#course-content h2:hover, 
+#course-content p:hover, 
+#transform-world p:hover, 
+#professional-challenges h2:hover, 
+#professional-challenges p:hover,
+.module:hover,
+footer p:hover {
+  transform: scale(1.05); /* Aumento de tamanho */
+  color: #4c9ffd; /* Muda a cor ao passar o mouse */
+}
+
+.banner-content button {
+  color: rgb(0, 0, 0);
+  background-color: #4c9ffd;
+  border-radius: 3;
+  transition: transform 0.3s, background-color 0.3s; /* Suaviza transições */
+}
+
+.banner-content button:hover {
+  transform: scale(1.1); /* Aumenta o tamanho do botão */
+  background-color: #d8dcdf; /* Troca a cor de fundo quando hover */
+  color: #000000; /* Aumenta a legibilidade */
+}
+#transform-world {
+  background-image: url('assets/images/woman-code.png'); /* Altere para o caminho da sua imagem */
+  background-size: cover; /* Faz a imagem cobrir toda a seção */
+  background-position: center; /* Centraliza a imagem */
+  padding: 40px; /* Espaçamento interno para o texto */
+  color: #fff; /* Define a cor do texto para branco (ou escolha uma que contraste) */
+  text-align: center; /* Centraliza o texto */
+}
+
+section{
+  padding: 100px;
+}
+button{
+  height: 10vh;
+  width: 20vw;
+  padding: 20px;
+  text-align: center;
+  border-radius: 80%;
+  cursor: pointer;
+}
+.banner-content button {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.banner-content button:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Aumenta a sombra no hover */
+  transform: translateY(-2px); /* Levanta o botão um pouco */
+}
+
+
+.banner-content button {
+  animation: pulse 1.5s infinite; /* Animação de pulsar */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05); /* Aumenta o botão no meio da animação */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.banner-content h1, 
+.banner-content p, 
+.button,
+#course-content h2, 
+#course-content p, 
+#transform-world p, 
+#professional-challenges h2,
+#professional-challenges p,
+footer p,
+.module {
+  font-size: 1.6em; /* Aumenta o tamanho da fonte (pode ajustar como quiser) */
+  letter-spacing: 0.10em; /* Espaçamento entre as letras */
+  line-height: 1.5; /* Altura da linha para dar mais espaço entre as linhas */
+}
+
+
+
+  
